@@ -10,12 +10,12 @@ var logger = require('morgan');
 
 cors = require('cors'),
 mongoose = require('mongoose'),
-config = require('./config/DB');
-const taskRoutes = require('./routes/tasks.routes');
+//config = require('./config/');
+taskRoutes = require('./routes/tasks.routes');
 bodyParser = require('body-parser'),
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.DB).then(
+mongoose.connect('mongodb://localhost:27017/tmdb').then(
   () => {console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
