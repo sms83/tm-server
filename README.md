@@ -1,9 +1,10 @@
-# tm-server
-# npm install grunt-shell
+# meanstackapp
 
-# grunt
+#docker build . -t sms83/meanstackapp:latest
+#docker push sms83/meanstackapp
 
-
-
-#docker build -t sms83/tm-mean .
-#docker push sms83/tm-mean
+Steps to run the project
+Install Docker community edition 18+ in your system
+Check out the sources code from this GIT project
+Run the command
+#docker-compose up
