@@ -35,7 +35,7 @@ app.use("/",express.static('public/tm-client'));
 
 app.use(bodyParser.json());
 app.use(cors());
-const port = process.env.PORT || 4001;
+const port = process.env.PORT || 4000;
 
 app.use('/tm', taskRoutes);
 
