@@ -1,10 +1,10 @@
 # meanstackapp
 
-#docker build . -t sms83/meanstackapp:latest
-#docker push sms83/meanstackapp
+docker build . -t sms83/meanstackapp:latest</br>
+docker push sms83/meanstackapp</br>
 
-Steps to run the project
-Install Docker community edition 18+ in your system
-Check out the sources code from this GIT project
-Run the command
-#docker-compose up
+Steps to run the project</br>
+Install Docker community edition 18+ in your system</br>
+Check out the sources code from this GIT project</br>
+Run the command</br>
+docker-compose up</br>
