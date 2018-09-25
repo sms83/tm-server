@@ -15,7 +15,7 @@ taskRoutes = require('./routes/tasks.routes');
 bodyParser = require('body-parser'),
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/tmdb').then(
+mongoose.connect('mongodb://mongo:27017/tmdb').then(
   () => {console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
@@ -35,7 +35,7 @@ app.use("/",express.static('public/tm-client'));
 
 app.use(bodyParser.json());
 app.use(cors());
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
 
 app.use('/tm', taskRoutes);
 
